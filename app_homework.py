@@ -46,3 +46,6 @@ def add_report(student_id):
     }
     student["reports"].append(new_report)
     return new_report, 201
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5001)  # <--- Added port=5001 here
