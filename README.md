@@ -135,14 +135,26 @@ python test_api.py
 
 ## Project structure
 
-```
-.
-├── app.py              # The API
-├── test_api.py         # Automated tests
-├── requirements.txt    # Dependencies
-├── .gitignore
-└── README.md
-```
+    .
+    ├── app.py              # The main API
+    ├── app_homework.py     # standalone nested API
+    ├── test_api.py         # Automated tests
+    ├── requirements.txt    # Dependencies
+    ├── .gitignore
+    └── README.md
+
+## Homework Assignment (`app_homework.py`)
+
+This file is a standalone Flask application provided as a homework assignment. Unlike the main `app.py`, this script does **not** require JWT authentication and focuses on handling nested data relationships. 
+
+It demonstrates how to:
+*   Retrieve a list of students and their associated reports.
+*   Create a new student.
+*   Add a specific report to an existing student using the route `/student/<student_id>/report`.
+
+To run this specific homework script instead of the main API, use:
+    python app_homework.py
+
 ## Run with Docker
 
 docker build -t flask-jwt-api .
