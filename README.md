@@ -24,7 +24,7 @@ A REST API built with Flask that manages two resources, **students** and **repor
 
 ```
 git clone https://github.com/mayss5a/flask-jwt-students.git
-cd flask-jwt-students
+cd flask-jwt-students-api
 ```
 
 ### 2. Create a virtual environment and install dependencies
