@@ -143,6 +143,14 @@ python test_api.py
 ├── .gitignore
 └── README.md
 ```
+## Run with Docker
+
+docker build -t flask-jwt-api .
+docker run -d -p 5000:5000 -e JWT_SECRET_KEY="your-long-secret" --name flask-api flask-jwt-api
+
+The API is then available at http://127.0.0.1:5000
+
+Or with Docker Compose: docker compose up --build
 
 ## Notes
 
